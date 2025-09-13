@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<h1>Página de teste de aplicação</h1>
+
+<form action="{{ url_for('login') }}" method="post">
+    <label for="user">User: </label>
+    <input type="text" name="user" id="user">
+
+    <label for="user">Senha: </label>
+    <input type="password" name="senha" id="senha">
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}
